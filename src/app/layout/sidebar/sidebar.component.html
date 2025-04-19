@@ -1,0 +1,11 @@
+<app-logo></app-logo>
+
+<ul class="sidebar-list">
+  @for (sidebarContent of sidebarContent; track $index) {
+    <li>
+      <button (click)="onPageChange(sidebarContent)">
+        {{ sidebarContent }}
+      </button>
+    </li>
+  }
+</ul>

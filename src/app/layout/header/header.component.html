@@ -1,0 +1,10 @@
+<header>
+    <h3>Welcome, {{ isLoggedin ? username : username }}</h3>
+  
+    <div class="header-buttons">
+      <button (click)="toggleTheme()">{{ isDarkTheme ? '🌞 Light' : '🌙 Dark' }}</button>
+      <button (click)="toggleLogin()">{{ isLoggedin ? 'Logout' : 'Login' }}</button>
+    </div>
+  </header>
+  <hr />
+  
